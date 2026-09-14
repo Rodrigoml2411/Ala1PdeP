@@ -1,0 +1,53 @@
+TEORIA 
+
+Teniendo en cuenta como lenguaje de programacion a JavaScript:
+
+
+Parte A: Paradigma según Kuhn
+
+
+Thomas Kuhn decía que un paradigma tiene cuatro componentes. Viéndolo en JavaScript estructurado (usando solo variables, if/else, bucles for/while y funciones, sin meterse en objetos complejos ni asincronismo):
+
+Generalización simbólica (las reglas escritas):
+
+Son la sintaxis básica y los constructores de control del lenguaje.
+
+Ejemplos: cómo se declaran variables (let, const), el uso de llaves {} para bloques de código, la estructura de las funciones function nombre(), y los bucles (for, while).
+
+Creencias de los profesionales (lo que se cree que es "mejor"):
+
+Se valora muchísimo su flexibilidad (corre en cualquier lado) y su tipado dinámico, que te permite prototipar rápido sin renegar declarando tipos de datos estrictos para cada variable.
+
+En su faceta estructurada, se aprecia que sea directo y muy legible para manipular datos o lógica lógica sin la complejidad de armar clases u objetos gigantes.
+
+
+Parte B: Ejes para la elección del lenguaje
+
+
+¿Sintaxis/semántica bien definida y documentación oficial?
+
+Sí. Su sintaxis y semántica están estandarizadas formalmente por la especificación ECMAScript (ECMA-262). Además, cuenta con la documentación de MDN (Mozilla Developer Network), que es el estándar de facto en la industria, hipercompleta y clara.
+
+¿Es posible comprobar el código producido?
+
+Sí, pero principalmente en tiempo de ejecución. Al ser interpretado (o compilado JIT), no tenés un compilador estricto que te avise de todos los errores antes de ejecutar. Sin embargo, se pueden usar linters (como ESLint) o herramientas externas para revisar errores antes de correrlo.
+
+¿Es confiable?
+
+Regular. Su tipado débil y dinámico hace que a veces haga cosas raras en silencio (por ejemplo, 5 + "5" da "55" en vez de un error). Si no tenés cuidado con la lógica, pueden aparecer fallos inesperados.
+
+¿Es ortogonal?
+
+No mucho. La ortogonalidad significa que pocos conceptos se combinan de forma totalmente predecible sin excepciones. JS tiene varias "excepciones a la regla" y comportamientos extraños (como el hoisting o las diferencias entre == y ===).
+
+¿Consistencia y uniformidad?
+
+Mediana / Baja en versiones viejas, mejor en JS moderno. JS fue diseñado muy rápido al principio, por lo que tiene inconsistencias históricas en nombres de métodos o comportamientos. Sin embargo, las versiones modernas (ES6 en adelante) arreglaron bastante esto para hacerlo más uniforme.
+
+¿Es extensible? ¿Hay subconjuntos?
+
+Sí. Podés extenderlo agregando librerías o funciones al prototipo global. En cuanto a subconjuntos y superconjuntos, tenés desde JSON (que nació de JS) hasta superconjuntos como TypeScript (que le agrega tipos) o transpiladores como Babel que recortan o transforman el lenguaje.
+
+¿El código producido es transportable?
+
+Totalmente. Es uno de los lenguajes más portables del mundo. Un archivo .js corre prácticamente en cualquier navegador (Chrome, Firefox, Safari) y en casi cualquier sistema operativo mediante entornos como Node.js.
